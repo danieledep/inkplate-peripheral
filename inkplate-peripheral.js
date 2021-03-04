@@ -41,81 +41,81 @@ function echo() {
 }
 
 function drawPixel(x, y, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString = "b#0(" + XXX + "," + YYY + "," + CC + ")*\\n\\r";
+  let serialString = "b#0(" + XXX + "," + YYY + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 function drawLine(x, y, i, j, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var III = leadZeroes(i, 3);
-  var JJJ = leadZeroes(j, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let III = leadZeroes(i, 3);
+  let JJJ = leadZeroes(j, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#1(" + XXX + "," + YYY + "," + III + "," + JJJ + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 function drawFastVLine(x, y, l, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var LLL = leadZeroes(l, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let LLL = leadZeroes(l, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#2(" + XXX + "," + YYY + "," + LLL + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 function drawFastHLine(x, y, l, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var LLL = leadZeroes(l, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let LLL = leadZeroes(l, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#3(" + XXX + "," + YYY + "," + LLL + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 function drawRect(x, y, w, h, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var WWW = leadZeroes(w, 3);
-  var HHH = leadZeroes(h, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let WWW = leadZeroes(w, 3);
+  let HHH = leadZeroes(h, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#4(" + XXX + "," + YYY + "," + WWW + "," + HHH + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 function drawCircle(x, y, r, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var RRR = leadZeroes(r, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let RRR = leadZeroes(r, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#5(" + XXX + "," + YYY + "," + RRR + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 function drawTriangle(x1, y1, x2, y2, x3, y3, c) {
-  var XX1 = leadZeroes(x1, 3);
-  var YY1 = leadZeroes(y1, 3);
-  var XX2 = leadZeroes(x2, 3);
-  var YY2 = leadZeroes(y2, 3);
-  var XX3 = leadZeroes(x3, 3);
-  var YY3 = leadZeroes(y3, 3);
-  var CC = leadZeroes(c, 2);
+  let XX1 = leadZeroes(x1, 3);
+  let YY1 = leadZeroes(y1, 3);
+  let XX2 = leadZeroes(x2, 3);
+  let YY2 = leadZeroes(y2, 3);
+  let XX3 = leadZeroes(x3, 3);
+  let YY3 = leadZeroes(y3, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#6(" +
     XX1 +
     "," +
@@ -135,14 +135,14 @@ function drawTriangle(x1, y1, x2, y2, x3, y3, c) {
 }
 
 function drawRoudRect(x, y, w, h, r, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var WWW = leadZeroes(w, 3);
-  var HHH = leadZeroes(h, 3);
-  var RRR = leadZeroes(r, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let WWW = leadZeroes(w, 3);
+  let HHH = leadZeroes(h, 3);
+  let RRR = leadZeroes(r, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#7(" +
     XXX +
     "," +
@@ -160,38 +160,38 @@ function drawRoudRect(x, y, w, h, r, c) {
 }
 
 function fillRect(x, y, w, h, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var WWW = leadZeroes(w, 3);
-  var HHH = leadZeroes(h, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let WWW = leadZeroes(w, 3);
+  let HHH = leadZeroes(h, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#8(" + XXX + "," + YYY + "," + WWW + "," + HHH + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 function fillCircle(x, y, r, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var RRR = leadZeroes(r, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let RRR = leadZeroes(r, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#9(" + XXX + "," + YYY + "," + RRR + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 function fillTriangle(x1, y1, x2, y2, x3, y3, c) {
-  var XX1 = leadZeroes(x1, 3);
-  var YY1 = leadZeroes(y1, 3);
-  var XX2 = leadZeroes(x2, 3);
-  var YY2 = leadZeroes(y2, 3);
-  var XX3 = leadZeroes(x3, 3);
-  var YY3 = leadZeroes(y3, 3);
-  var CC = leadZeroes(c, 2);
+  let XX1 = leadZeroes(x1, 3);
+  let YY1 = leadZeroes(y1, 3);
+  let XX2 = leadZeroes(x2, 3);
+  let YY2 = leadZeroes(y2, 3);
+  let XX3 = leadZeroes(x3, 3);
+  let YY3 = leadZeroes(y3, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#A(" +
     XX1 +
     "," +
@@ -211,14 +211,14 @@ function fillTriangle(x1, y1, x2, y2, x3, y3, c) {
 }
 
 function fillRoudRect(x, y, w, h, r, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var WWW = leadZeroes(w, 3);
-  var HHH = leadZeroes(h, 3);
-  var RRR = leadZeroes(r, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let WWW = leadZeroes(w, 3);
+  let HHH = leadZeroes(h, 3);
+  let RRR = leadZeroes(r, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#B(" +
     XXX +
     "," +
@@ -236,55 +236,55 @@ function fillRoudRect(x, y, w, h, r, c) {
 }
 
 function print(str) {
-  var STRING = str.hexEncode();
-  var serialString = 'b#C("' + STRING + '")*\\n\\r';
+  let STRING = str.hexEncode();
+  let serialString = 'b#C("' + STRING + '")*\\n\\r';
 
   return serialString;
 }
 
 function setTextSize(n) {
-  var NN = leadZeroes(n, 2);
+  let NN = leadZeroes(n, 2);
 
-  var serialString = "b#D(" + NN + ")*\\n\\r";
+  let serialString = "b#D(" + NN + ")*\\n\\r";
   return serialString;
 }
 
 function setCursor(x, y) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
 
-  var serialString = "b#E(" + XXX + "," + YYY + ")*\\n\\r";
+  let serialString = "b#E(" + XXX + "," + YYY + ")*\\n\\r";
   return serialString;
 }
 
 function setTextWrap(bool) {
-  var B = "F";
+  let B = "F";
 
   if (bool) B = "T";
   else B = "F";
 
-  var serialString = "b#F(" + B + ")*\\n\\r";
+  let serialString = "b#F(" + B + ")*\\n\\r";
   return serialString;
 }
 
 function setRotation(r) {
-  var RRR = leadZeroes(r, 3);
+  let RRR = leadZeroes(r, 3);
 
-  var serialString = "b#G(" + RRR + ")*\\n\\r";
+  let serialString = "b#G(" + RRR + ")*\\n\\r";
   return serialString;
 }
 
 function drawBitmap(x, y, path) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var HEX = path.hexEncode();
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let HEX = path.hexEncode();
 
-  var serialString = "b#H(" + XXX + "," + YYY + ',"' + HEX + '")*\\n\\r';
+  let serialString = "b#H(" + XXX + "," + YYY + ',"' + HEX + '")*\\n\\r';
   return serialString;
 }
 
 function setDisplayMode(D) {
-  var serialString = "b#I(" + D + ")*\\n\\r";
+  let serialString = "b#I(" + D + ")*\\n\\r";
   return serialString;
 }
 
@@ -301,11 +301,11 @@ function display() {
 }
 
 function partialUpdate(y1, x2, y2) {
-  var YY1 = leadZeroes(y1, 3);
-  var XX2 = leadZeroes(x2, 3);
-  var YY2 = leadZeroes(y2, 3);
+  let YY1 = leadZeroes(y1, 3);
+  let XX2 = leadZeroes(x2, 3);
+  let YY2 = leadZeroes(y2, 3);
 
-  var serialString = "b#M(" + YY1 + "," + XX2 + "," + YY2 + ")*\\n\\r";
+  let serialString = "b#M(" + YY1 + "," + XX2 + "," + YY2 + ")*\\n\\r";
   return serialString;
 }
 
@@ -322,7 +322,7 @@ function readBattery() {
 }
 
 function panelSupply(s) {
-  var serialString = "b#Q(" + s + ")*\\n\\r";
+  let serialString = "b#Q(" + s + ")*\\n\\r";
   return serialString;
 }
 
@@ -331,23 +331,23 @@ function getPanelState() {
 }
 
 function drawImage(x, y, path) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var HEX = path.hexEncode();
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let HEX = path.hexEncode();
 
-  var serialString = "b#S(" + XXX + "," + YYY + ',"' + HEX + '")*\\n\\r';
+  let serialString = "b#S(" + XXX + "," + YYY + ',"' + HEX + '")*\\n\\r';
   return serialString;
 }
 
 function drawThickLine(x, y, i, j, t, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var III = leadZeroes(i, 3);
-  var JJJ = leadZeroes(j, 3);
-  var TT = leadZeroes(t, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let III = leadZeroes(i, 3);
+  let JJJ = leadZeroes(j, 3);
+  let TT = leadZeroes(t, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#T(" +
     XXX +
     "," +
@@ -365,32 +365,32 @@ function drawThickLine(x, y, i, j, t, c) {
 }
 
 function drawEllipse(x, y, rx, ry, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var RRX = leadZeroes(rx, 3);
-  var RRY = leadZeroes(ry, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let RRX = leadZeroes(rx, 3);
+  let RRY = leadZeroes(ry, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#U(" + XXX + "," + YYY + "," + RRX + "," + RRY + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 function fillEllipse(x, y, rx, ry, c) {
-  var XXX = leadZeroes(x, 3);
-  var YYY = leadZeroes(y, 3);
-  var RRX = leadZeroes(rx, 3);
-  var RRY = leadZeroes(ry, 3);
-  var CC = leadZeroes(c, 2);
+  let XXX = leadZeroes(x, 3);
+  let YYY = leadZeroes(y, 3);
+  let RRX = leadZeroes(rx, 3);
+  let RRY = leadZeroes(ry, 3);
+  let CC = leadZeroes(c, 2);
 
-  var serialString =
+  let serialString =
     "b#V(" + XXX + "," + YYY + "," + RRX + "," + RRY + "," + CC + ")*\\n\\r";
   return serialString;
 }
 
 String.prototype.hexEncode = function () {
-  var hex, i;
-  var result = "";
+  let hex, i;
+  let result = "";
 
   for (i = 0; i < this.length; i++) {
     hex = this.charCodeAt(i).toString(16);
