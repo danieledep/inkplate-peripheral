@@ -1,5 +1,5 @@
 const SerialPort = require("serialport");
-const inkplate = require("./lib/inkplate-peripheral");
+const inkplate = require("./inkplate-peripheral");
 
 
 
