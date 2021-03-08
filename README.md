@@ -7,7 +7,7 @@ Send more easily commands to the Inkplate display via serial from node programs.
 ``` const inkplate = require("./inkplate-peripheral"); ```   
 3. Install the Serialport library   
 ``` npm i serialport ```   
-4 Run the node app   
+4. Run the node app   
 ``` node example.js ```   
 
    
